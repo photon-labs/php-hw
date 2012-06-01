@@ -5,6 +5,14 @@
     <artifactId>PHR_php-hw</artifactId>
     <name>PHR_php-hw</name>
     <version>1.0.0</version>
+    
+    <scm>
+        <connection>scm:git:git@github.com:phresco/php-hw.git</connection>
+        <developerConnection>scm:git:git@github.com:phresco/php-hw.git</developerConnection>
+        <url>https://github.com/phresco/php-hw</url>
+    </scm>
+    
+    
     <build>
         <sourceDirectory>source</sourceDirectory>
         <resources>
