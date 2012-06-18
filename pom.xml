@@ -4,8 +4,11 @@
     <groupId>com.photon.phresco</groupId>
     <artifactId>PHR_php-hw</artifactId>
     <name>PHR_php-hw</name>
-    <version>1.2.0.1000-SNAPSHOT</version>
-    
+    <version>1.0.0</version>
+    <inceptionYear>1999</inceptionYear>
+    <organization>
+        <name>Photon Infotech Inc.</name>
+    </organization>
     <scm>
         <connection>scm:git:git@github.com:phresco/php-hw.git</connection>
         <developerConnection>scm:git:git@github.com:phresco/php-hw.git</developerConnection>
@@ -24,8 +27,24 @@
             <plugin>
                 <groupId>com.photon.phresco.plugins</groupId>
                 <artifactId>php-maven-plugin</artifactId>
-                <version>1.2.0.1000-SNAPSHOT</version>
+                <version>1.1.17000</version>
                 <extensions>true</extensions>
+            </plugin>
+			<plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>1.1</version>
+                <configuration>
+                   <verbose>false</verbose>
+                   <processStartTag>###</processStartTag>
+                   <processEndTag>###</processEndTag>
+                  <!-- <sectionDelimiter>" "</sectionDelimiter> -->
+                   <licenseName>apache_v2</licenseName>
+				   <roots>
+				   <root>source</root>
+				   <root>test</root>
+				   </roots>
+                </configuration>
             </plugin>
         </plugins>
     </build>
